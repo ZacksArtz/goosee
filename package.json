@@ -20,6 +20,7 @@
     "discord-anti-spam": "^1.1.1",
     "discord.js": "^11.2.1",
     "discord.js-musicbot-addon": "^1.8.2",
+    "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "enmap": "^0.4.1",
     "enmap-level": "^1.0.0",

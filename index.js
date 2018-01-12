@@ -21,6 +21,9 @@ const EnmapLevel = require("enmap-level");
 // or `bot.something`, this is what we're refering to. Your client.
 const client = new Discord.Client();
 
+//for dotenv
+require('dotenv').config()
+
 // Here we load the config file that contains our token and our prefix values.
 client.config = require("./config.js");
 // client.config.token contains the bot's token
@@ -90,12 +93,12 @@ const init = async() => {
   const Music = require('discord.js-musicbot-addon');
   const music = new Music(client, {
     youtubeKey: 'AIzaSyCtWR69bm1TWo_-cebzBeJD_m-bnz4gi6E',
-    prefix: '>',
+    prefix: '/',
     botOwner: '133314498214756352'
   });
 
   //Here's where we log in the bot
-  client.login(client.config.token);
+  client.login(process.env.token);
 
   // End top-level async/await function.
 };
